@@ -1,0 +1,12 @@
+import KeenTracking from 'keen-tracking';
+
+// Configure a client instance
+const client = new KeenTracking({
+  projectId: '5c851ac1c9e77c0001edea4d',
+  writeKey: '2795ED2E498D4D6FDCCF39F9DF848C34191EDF981C3DC7198C20CB5A519C857333097DA2B83507622C4200F4D48B429AEFE227AFC6F0A4FB42B4BD94B201FAA0CCB0855E8D89E5D229D2367940FF17FB349779CBB53B266598955E0D37E4EA65'
+});
+
+// Record an event
+client.recordEvent('purchases', {
+  item: 'Avocado'
+});
